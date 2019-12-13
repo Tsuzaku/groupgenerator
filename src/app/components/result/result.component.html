@@ -1,0 +1,12 @@
+
+<div *ngIf="resultado">
+    <div  class="caja" *ngFor="let grupo of nombreGrupos"  >
+        <p-card class="grupo" header="{{grupo}}" [style]="{width: '360px'}">
+                <div class="caja2">
+                    <ul>
+                        <li *ngFor="let member of resultado[grupo]"> {{member}}</li>
+                    </ul>
+                </div>
+            </p-card>
+      </div>
+</div>

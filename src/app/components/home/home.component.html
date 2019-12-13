@@ -1,0 +1,29 @@
+<h2>Generador de grupos</h2>
+
+
+<span class="ui-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="groupName" pInputText> 
+    <label for="float-input">Prefijo de los grupos</label>
+</span>
+<br>
+<span class="ui-float-label ">
+    <input id="groupsize" type="text" size="30" [(ngModel)]="groupSize" pInputText> 
+    <label for="groupsize">Tamanyo del grupo</label>
+</span>
+
+<br>
+<div class="add">
+    <span class="ui-float-label">
+        <input id="newmember" type="text" size="30" [(ngModel)]="newMember" pInputText> 
+        <label for="newmember">Nuevo miembro</label>
+    </span>
+    
+    
+    <button pButton type="button" label="add" class="ui-button-rounded button-success" (click)="addMember()"></button><br>
+</div>
+
+<ul>
+    <li *ngFor="let miembro of members">{{miembro}}</li>
+</ul><br>
+<button pButton type="button" label="CREATE GROUPS" class="ui-button-rounded button-success"  (click)="createGroups()"></button>
+

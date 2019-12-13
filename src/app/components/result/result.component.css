@@ -1,0 +1,30 @@
+.grupo{
+    width: 100%;
+}
+
+.caja{
+    margin: 5%;
+  
+}
+
+.caja2{
+  
+    width: 90%;
+}
+
+.p-card div{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .caja{
+        width: 40%;
+        
+    }
+
+    .p-card div{
+        width: 40%;
+    }
+    
+
+  }
